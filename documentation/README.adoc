@@ -34,6 +34,14 @@ _Aucune description disponible_
 |[[BusinessObject.attribute]]attribute         |String|           
 |===
 
+===== icon:lock[] Access rules
+
+[grid=cols,options="header",cols="1,3a,2,2",stripes=even,frame=topbot]
+|===
+|Nom   |Description|Attributs|Profiles with access                          
+|myRule|           |attribute|<<_1300bb05-3afe-3c2d-af8b-543b4fb16c32,User>>
+|===
+
 == Organization
 
 === Groupes
