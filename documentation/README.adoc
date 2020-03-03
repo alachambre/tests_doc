@@ -1,11 +1,11 @@
-= null
+= tests_doc
 Généré avec Bonita
 vnull, {docdate}
 :toc: left
 :toc-title: Table des matières
 :toclevels: 3
-:bonita-version:
-:imagesdir: ./null
+:bonita-version: 7.11
+:imagesdir: .//Users/adrien/bonita/bonita-studio-sp/subscription/bonita-documentation-generator/tests_doc/documentation/images
 :icons: font
 :sectnums: numbered
 :sectanchors:
