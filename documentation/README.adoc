@@ -12,6 +12,28 @@ vnull, {docdate}
 :hardbreaks:
 :experimental:
 
+== Modèle de Données Métier
+
+////
+Install graphviz to benefit of plantuml diagram generation.
+Visit https://graphviz.org/download/ for more information.
+////
+
+=== Package com.company.model
+
+==== BusinessObject
+
+_Aucune description disponible_
+
+===== icon:list[] Attributs
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Nom                                           |Type  |Description
+|[[BusinessObject.persistenceId]]persistenceId*|Long  |           
+|[[BusinessObject.attribute]]attribute         |String|           
+|===
+
 == Organization
 
 === Groupes
