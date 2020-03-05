@@ -1,0 +1,161 @@
+= tests_doc
+Généré avec Bonita
+vnull, {docdate}
+:toc: left
+:toc-title: Table des matières
+:toclevels: 3
+:bonita-version: 7.11
+:imagesdir: .//Users/adrien/bonita/bonita-studio-sp/subscription/bonita-documentation-generator/tests_doc/documentation/images
+:icons: font
+:sectnums: numbered
+:sectanchors:
+:hardbreaks:
+:experimental:
+
+== Modèle de Données Métier
+
+////
+Install graphviz to benefit of plantuml diagram generation.
+Visit https://graphviz.org/download/ for more information.
+////
+
+=== Package com.company.model
+
+==== BusinessObject
+
+_Aucune description disponible_
+
+===== icon:list[] Attributs
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Nom                                           |Type  |Description
+|[[BusinessObject.persistenceId]]persistenceId*|Long  |           
+|[[BusinessObject.attribute]]attribute         |String|           
+|===
+
+===== icon:lock[] Access rules
+
+[grid=cols,options="header",cols="1,3a,2,2",stripes=even,frame=topbot]
+|===
+|Nom   |Description|Attributs|Profiles with access                          
+|myRule|           |attribute|<<_1300bb05-3afe-3c2d-af8b-543b4fb16c32,User>>
+|===
+
+== Processes
+
+=== image:icons/Pool.png[title="Process"] [[_eba70053-68e6-3c79-95f1-2c5cd3645c7c]]Pool (1.0)
+
+_Aucune description disponible_
+
+image::processes/Pool-1.0.png[]
+
+==== icon:users[] Acteurs
+
+[grid=cols,options="header",cols="1,3a",stripes=even,frame=topbot]
+|===
+|Nom                                                                                                      |Description                                                 
+|[[_67eccd08-4b07-331f-aff1-cbbd111e85aa]]Employee actor icon:play-circle[title="Initiateur du processus"]|This is an example of actor that is mapped to any ACME users
+|===
+
+==== Instantiation form
+
+[CAUTION]
+====
+Invalid form mapping. No form specified.
+====
+
+==== image:icons/Lane.png[title="Lane"] Employee lane (<<_67eccd08-4b07-331f-aff1-cbbd111e85aa,icon:user[title="Actor"] Employee actor>>)
+
+_Aucune description disponible_
+
+===== icon:filter[] Filtres d'acteurs
+
+*custom-actor-definition-1.0.0: custom-actor-filter*
+
+==== [[_c332fec9-a569-3c6b-b112-ea340fdb34c9]]image:icons/StartEvent.png[title="StartEvent"] Start1
+
+_Aucune description disponible_
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_0b78a02d-ec7a-30bf-85e8-b314343d8e92,Step1>>*
+
+==== [[_0b78a02d-ec7a-30bf-85e8-b314343d8e92]]image:icons/Task.png[title="Task"] Step1
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_c332fec9-a569-3c6b-b112-ea340fdb34c9,Start1>>
+
+[CAUTION]
+====
+Invalid form mapping. No form specified.
+====
+
+===== icon:plug[] Connecteurs en entrée
+
+*Custom definition: myCustomConnector*
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_ba9bd935-3f6c-30d8-b47b-d004f05d8cd2,End1>>*
+
+==== [[_ba9bd935-3f6c-30d8-b47b-d004f05d8cd2]]image:icons/EndTerminatedEvent.png[title="EndTerminatedEvent"] End1
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_0b78a02d-ec7a-30bf-85e8-b314343d8e92,Step1>>
+
+== Diagrammes
+
+=== MyDiagram (1.0)
+
+_Aucune description disponible_
+
+image::diagrams/MyDiagram-1.0.png[]
+
+== Organization
+
+=== Groupes
+
+////
+Install graphviz to benefit of plantuml diagram generation.
+Visit https://graphviz.org/download/ for more information.
+////
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Path                     |Nom d'affichage       |Description                                                                         
+|/acme                    |Acme                  |This group represents the acme department of the ACME organization                  
+|/acme/hr                 |Human Resources       |This group represents the human resources department of the ACME organization       
+|/acme/finance            |Finance               |This group represents the finance department of the ACME organization               
+|/acme/it                 |Infrastructure        |This group represents the infrastructure department of the ACME organization        
+|/acme/marketing          |Marketing             |This group represents the marketing department of the ACME organization             
+|/acme/production         |Production            |This group represents the production department of the ACME organization            
+|/acme/production/rd      |Research & Development|This group represents the research & development department of the ACME organization
+|/acme/production/services|Services              |This group represents the services department of the ACME organization              
+|/acme/sales              |Sales                 |This group represents the sales department of the ACME organization                 
+|/acme/sales/europe       |Europe                |This group represents the europe department of the ACME organization                
+|/acme/sales/asia         |Asia                  |This group represents the asia department of the ACME organization                  
+|/acme/sales/latin_america|Latin America         |This group represents the latin america department of the ACME organization         
+|/acme/sales/north_america|North America         |This group represents the north america department of the ACME organization         
+|===
+
+=== Rôles
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Nom   |Nom d'affichage|Description
+|member|Member         |           
+|===
+
+=== Profils
+
+[grid=cols,options="header",cols="1e,3a",stripes=even,frame=topbot]
+|===
+|Nom                                                     |Description                                                                                                                  
+|[[_1300bb05-3afe-3c2d-af8b-543b4fb16c32]]User           |This is a default profile. Name and description will be translated in Bonita Portal. Do not edit the name or the description.
+|[[_080d4ce6-9f34-37f2-a270-2edb021a60ec]]Administrator  |This is a default profile. Name and description will be translated in Bonita Portal. Do not edit the name or the description.
+|[[_ec4b68ef-adbc-302e-8811-94d9a8fc9032]]Process manager|This is a default profile. Name and description will be translated in Bonita Portal. Do not edit the name or the description.
+|===
+
